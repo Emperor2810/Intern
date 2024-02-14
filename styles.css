@@ -263,7 +263,7 @@ header {
     }
     .sidebar ul li i{
         position: relative;
-        left: 220px;
+        left: 200px;
         display: block;
     }
     .sidebar-content ul li a{
@@ -271,7 +271,7 @@ header {
     }
     .sidebar-content ul i{
         position: relative;
-        left: 150px;
+        left: 100px;
         display: block;
     }
 }
