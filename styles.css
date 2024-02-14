@@ -1,0 +1,277 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Body styles */
+body {
+    font-family: 'General Sans', sans-serif;
+    line-height: 1.6;
+    background-color: #f8f8f8;
+    color: #333;
+  }
+  
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 10px;
+    z-index: 5;
+}
+
+.navbar{
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    background: transparent;
+}
+.navbar ul{
+    margin-left: 500px;
+    justify-content: center; 
+    align-items: center;
+    display: flex;
+    list-style: none;
+}
+.navbar ul li{
+    margin-right: 25px;
+}
+.navbar ul li a{
+    font-family: "Dancing Script", cursive;
+    font-size: 1.2rem;
+    color: #000000;
+    transition: color 0.3s ease;
+}
+.navbar a:hover{
+    color: rgb(255, 225, 0);
+}
+/*sidebar */
+.sidebar-content{
+    display: none;
+    position:fixed;
+    top: 0;
+    right:0;
+    height: 100%;
+    width: 250px;
+    justify-content: flex-start;
+    background-color: rgba(250, 250, 250, 0.2);
+    backdrop-filter:blur(10px);
+    box-shadow: rgba(0, 0, 0, 0.1);
+}
+.sidebar-content li{
+    margin-bottom: 25px;
+    width: 100%;
+}
+.sidebar-content a{
+    width: 100%;
+}
+.sidebar i {
+    display: none;
+    font-size: 2.5rem;
+    color: #000000;
+}
+.sidebar-content ul{
+    width: 250px;
+    height: 100vh;
+    align-items: center;
+    justify-content: space-between;
+    display:block;
+}
+.sidebar-content ul a{
+    color: #000;
+}
+.sidebar-content ul i{
+    width: 250px;
+    align-items: center;
+    color: #000000;
+    position: relative;
+    left: 30%;
+}
+  
+  /* Main styles */
+  main {
+    padding: 10rem 0;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  /* Hero section */
+  .hero {
+    background-color: #ffd700;
+    text-align: center;
+    padding: 8rem 0;
+  }
+  
+  .hero h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    color: #333;
+  }
+  .hero h2{
+    font-size: 3rem;
+    color: #ff0000;
+    font-family: "Dancing Script", cursive;
+  } 
+  
+  .hero p {
+    font-size: 1.2rem;
+    color: #333;
+  }
+  
+  /* About section */
+  .about {
+    text-align: center;
+    padding: 11rem 0;
+  }
+  .about img {
+    border-radius: 50px;
+    max-width: 100%;
+    height: 500px;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 20px; 
+}
+  .about h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: #333;
+  }
+  
+  .about p {
+    font-size: 1.1rem;
+    color: #555;
+  }
+  
+  #why h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 5rem;
+    color: #333;
+  }
+  /* Countdown section */
+  .countdown {
+    margin-top: 5px;
+    background-color: #646363;
+    color: #fff;
+    text-align: center;
+    padding: 10rem 0;
+  }
+  
+  .countdown h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .countdown p {
+    font-size: 1.2rem;
+    color: #ffd700;
+  }
+  
+  /* Call to action section */
+  .cta {
+    margin-top: 180px;
+    text-align: center;
+    padding: 1rem 0;
+  }
+  
+  .cta h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: #333;
+  }
+  
+  button {
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #ffd700;
+  }
+  
+  /* Form section */
+  .form-section {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 2rem 0;
+    display: none;
+  }
+  
+  .form-container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  .form-container h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #fff;
+  }
+  
+  #subscriptionForm {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  #subscriptionForm input {
+    padding: 10px;
+    margin: 10px;
+    width: calc(50% - 20px);
+    font-size: 1rem;
+    border: none;
+  }
+  
+  #subscriptionForm button {
+    padding: 10px 20px;
+    margin: 10px;
+    font-size: 1rem;
+  }
+  
+  /* Footer styles */
+  footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 2rem 0;
+  }
+  
+  footer p {
+    font-size: 1rem;
+  }
+
+  @media screen and (max-width: 767px) {
+    .sidebar ul li a{
+        display: none;
+    }
+    .sidebar ul{
+        margin-left: 0;
+    }
+    .sidebar ul li i{
+        position: relative;
+        left: 220px;
+        display: block;
+    }
+    .sidebar-content ul li a{
+        display: block;
+    }
+    .sidebar-content ul i{
+        position: relative;
+        left: 150px;
+        display: block;
+    }
+}
